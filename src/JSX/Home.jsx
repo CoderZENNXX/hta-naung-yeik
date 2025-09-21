@@ -1,37 +1,26 @@
-import './App.css'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import 'leaflet/dist/leaflet.css'
+import "../CSS/App.css"
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
+import { Link } from "react-router-dom"
+import "leaflet/dist/leaflet.css"
 
-function App() {
-  const today = new Date().getDay()
+function Home() {
+    const today = new Date().getDay()
 
-  const dailySpecials = {
-    0: {day: "sunday", menu: "Chicken Palatar"},
-    1: {day: "monday", menu: "Samosa Thoke"},
-    2: {day: "tuesday", menu: "Kyar Zan Soup"},
-    3: {day: "wednesday", menu: "Grilled Pork Belly"},
-    4: {day: "thursday", menu: "Pyi Rice Thoke, Fried Tofu, Thoke's"},
-    5: {day: "friday", menu: "Shan Noodles, Grilled Duck, Grilled Chicken"},
-    6: {day: "saturday", menu: "Coconut Milk Noodles"}
-  }
+    const dailySpecials = {
+      0: {day: "sunday", menu: "Chicken Palatar"},
+      1: {day: "monday", menu: "Samosa Thoke"},
+      2: {day: "tuesday", menu: "Kyar Zan Soup"},
+      3: {day: "wednesday", menu: "Grilled Pork Belly"},
+      4: {day: "thursday", menu: "Pyi Rice Thoke, Fried Tofu, Thoke's"},
+      5: {day: "friday", menu: "Shan Noodles, Grilled Duck, Grilled Chicken"},
+      6: {day: "saturday", menu: "Coconut Milk Noodles"}
+    }
 
   return (
-    <div className="app">
-      <header className="header">
-        <img src="/logo.png" className="logo" alt="logo" />
-        <div className="btn-group">
-          <button className="home-btn">Home</button>
-          <button className="menu-btn">Menu</button>
-          <button className="location-btn">Location</button>
-          <button className="contact-btn">Contact</button>
-          <button className="about-btn">About Us</button>
-        </div>
-      </header>
-
-      <main className="main">
+    <main className="home">
         <h1 className="title">Hta Naung Yeik - Ki Ra Na Myanmar Foods</h1>
 
-        <div className="main-content">
+        <div className="home-content">
           <div className="daily-special section" style={{
             backgroundImage: `url(./${dailySpecials[today].day}-special-background.jpg)`
           }}>
@@ -60,17 +49,11 @@ function App() {
                 <Popup>Hta Naung Yeik</Popup>
               </Marker>
             </MapContainer>
-            <button className="google-map-location"><a className="google-map-location-link" href="https://www.google.com/maps/place/Hta+Naung+Yeik/@16.7141041,98.5889539,19z/data=!4m6!3m5!1s0x30dd994acb048c41:0xe266b29db0592848!8m2!3d16.71388!4d98.58937!16s%2Fg%2F11tws0slqb?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">View On Google Maps</a></button>
-            <h1 className="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae et impedit recusandae officiis mollitia sit, blanditiis sapiente minima cupiditate enim voluptatum labore eos deleniti voluptatibus reiciendis exercitationem odio quasi nobis?</h1>
+            <button className="more-location"><Link className="more-location-link" to="/location">View More</Link></button>
           </div>
         </div>
-      </main>
-
-      <footer className="footer">
-          <h1>o</h1>
-      </footer>
-    </div>
+    </main>
   )
 }
 
-export default App
+export default Home

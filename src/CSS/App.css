@@ -2,13 +2,13 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: "header"
-                         "main"
+                         "home"
                          "footer";
     font-family: "Noto Serif Display";
-    color: white
+    color: white;
 }
 
-.header, .main, .footer {
+.header, .home, .footer {
     padding: 5px;
 }
 
@@ -36,7 +36,7 @@
     margin: 0 10px;
 }
 
-.home-btn, .menu-btn, .location-btn, .contact-btn, .about-btn {
+.home-btn, .menu-btn, .location-btn, .contact-btn, .aboutus-btn {
     height: 40px;
     width: 120px;
     font-size: 22px;
@@ -47,7 +47,7 @@
     font-family: "Noto Serif Display";
 }
 
-.main {
+.home {
     background-color: #17322e;
     min-height: 300vh;
 }
@@ -59,7 +59,7 @@
     font-size: 45px;
 }
 
-.main-content {
+.home-content {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
@@ -155,7 +155,7 @@
 }
 
 .order {
-    background: url(./order-background.jpg);
+    background-image: url(./order-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -182,10 +182,6 @@
     margin-left: 10px;
 }
 
-.order-now-link {
-    all: unset;
-}
-
 @media (max-width: 700px) {
     .daily-special, .order {
         background-attachment: unset;
@@ -193,20 +189,21 @@
 }
 
 .location {
-    background: linear-gradient(90deg, gold, #17322e);
+    background: linear-gradient(90deg, gold, gold, #17322e);
+    display: flex;
 }
 
 .map-location {
-    height: 75%;
-    width: 100%;
+    height: 100%;
+    width: 60%;
     margin-right: auto;
 }
 
-.google-map-location {
-    height: 96px;
-    width: 360px;
+.more-location {
+    height: 60px;
+    width: 225px;
     font-size: 33px;
-    border-radius: 48px;
+    border-radius: 30px;
     border: none;
     background: linear-gradient(90deg, #FFEE8E, #FFD700);
     cursor: pointer;
@@ -215,15 +212,15 @@
     margin-top: 10px;
 }
 
-.google-map-location-link {
+.more-location-link, .order-now-link, .home-btn-link, .menu-btn-link, .location-btn-link, .contact-btn-link, .aboutus-btn-link {
     all: unset;
 }
 
-.home-btn:hover, .menu-btn:hover, .location-btn:hover, .contact-btn:hover, .about-btn:hover, .view-menu:hover, .order-now:hover, .google-map-location:hover {
+.home-btn:hover, .menu-btn:hover, .location-btn:hover, .contact-btn:hover, .aboutus-btn:hover, .view-menu:hover, .order-now:hover, .more-location:hover {
     color: white;
 }
 
-.home-btn:active, .menu-btn:active, .location-btn:active, .contact-btn:active, .about-btn:active, .view-menu:active, .order-now:active, .google-map-location:active {
+.home-btn:active, .menu-btn:active, .location-btn:active, .contact-btn:active, .aboutus-btn:active, .view-menu:active, .order-now:active, .more-location:active {
     color: black;
 }
 
