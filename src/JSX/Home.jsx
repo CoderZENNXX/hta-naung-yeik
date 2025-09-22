@@ -29,7 +29,7 @@ function Home() {
           </div>
 
           <div className="menu section">
-            <img className="preview-menu" src="./daily-special-menu.png" />
+            <img className="preview-menu" src="./designed-weekly-special-menu.png" />
             <p className="menu-text">Lorem ip Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quidem sit optio repellendus, eos architecto consequuntur iusto nihil aspernatur vero sunt quos commodi sequi ipsum, non atque, mollitia fuga praesentium? sum dolor sit amet consectetur adipisicing elit. Quia magni accusamus eaque mollitia in corrupti sequi nostrum eligendi tempora iure asperiores, quidem debitis qui amet nisi rem provident, dolores quas.</p>
             <button className="view-menu">View Menu</button>
           </div>

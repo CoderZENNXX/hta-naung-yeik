@@ -63,12 +63,12 @@
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
-    grid-template-areas: "popular"
+    grid-template-areas: "daily-special"
                          "menu"
                          "order"
                          "location";
     place-items: center;
-    gap: 100px;
+    gap: 50px;
 }
 
 .section {
@@ -78,8 +78,8 @@
     font-family: "Noto Serif Display";
 }
 
-
 .daily-special {
+    grid-area: daily-special;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,6 +116,7 @@
 }
 
 .menu {
+    grid-area: menu;
     background: linear-gradient(90deg, #17322e, gold);
 }
 
@@ -155,6 +156,7 @@
 }
 
 .order {
+    grid-area: order;
     background-image: url(./order-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -189,8 +191,9 @@
 }
 
 .location {
-    background: linear-gradient(90deg, gold, gold, #17322e);
+    grid-area: location;
     display: flex;
+    background: linear-gradient(90deg, gold, gold, #17322e);
 }
 
 .map-location {
