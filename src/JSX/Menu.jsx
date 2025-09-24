@@ -21,12 +21,22 @@ function Menu() {
                 <div className="weekly-special-page menu-section">
                     <img className="weekly-special-full-menu" src="./weekly-special-menu.jpg" />
                     <p className="weekly-menu-text">Lorem ip Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quidem sit optio repellendus, eos architecto consequuntur iusto nihil aspernatur vero sunt quos commodi sequi ipsum, non atque, mollitia fuga praesentium? sum dolor sit amet consectetur adipisicing elit. Quia magni accusamus eaque mollitia in corrupti sequi nostrum eligendi tempora iure asperiores, quidem debitis qui amet nisi rem provident, dolores quas.</p>
-                    <img className="weekly-menu-image" src={`./${dailySpecials[today].day}-special.jpg`} />
+                    <img className="weekly-menu-image" src={`./${dailySpecials[today].day}-special-background.jpg`} />
                     <h1 className="weekly-dish-text">Today's Special Dish is <br/><span className="weekly-menu">{dailySpecials[today].menu}</span></h1>
                 </div>
                 <div className="daily-special-page menu-section">
                     <img className="daily-special-full-menu" src="./daily-special-menu.jpg" />
                     <p className="daily-menu-text">Lorem ip Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quidem sit optio repellendus, eos architecto consequuntur iusto nihil aspernatur vero sunt quos commodi sequi ipsum, non atque, mollitia fuga praesentium? sum dolor sit amet consectetur adipisicing elit. Quia magni accusamus eaque mollitia in corrupti sequi nostrum eligendi tempora iure asperiores, quidem debitis qui amet nisi rem provident, dolores quas.</p>
+                    <div className="daily-menu-images-container">
+                        <img className="daily-menu-image" src="./fried-pork.jpg" />
+                        <img className="daily-menu-image" src="./mohinga.jpg" />
+                        <img className="daily-menu-image" src="./raw-spicy-shrimp.jpg" />
+                        <img className="daily-menu-image" src="./noodles-thoke1.jpg" />
+                        <img className="daily-menu-image" src="./duck-egg-curry.jpg" />
+                        <img className="daily-menu-image" src="./kyar-zan-soup.jpg" />
+                        <img className="daily-menu-image" src="./pork-belly-thoke.jpg" />    
+                        <img className="daily-menu-image" src="./noodles-thoke2.jpg" />
+                    </div>                    
                 </div>
             </div>
         </div>

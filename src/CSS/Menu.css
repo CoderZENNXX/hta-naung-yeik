@@ -21,14 +21,14 @@
 
 .menu-section {
     width: 100%;
-    height: 620px;
+    height: 630px;
     overflow: hidden;
     font-family: "Noto Serif Display";
 }
 
 .weekly-special-page {
     grid-area: "weekly-menu";
-    background: linear-gradient(90deg, #17322e, gold);
+    background: linear-gradient(90deg, #fb5c00, goldenrod);
 }
 
 .weekly-special-full-menu {
@@ -38,8 +38,10 @@
 .weekly-menu-image {
     float: left;
     margin-right: 15px;
+    width: 325px;
+    height: auto;
     border: 2px solid black;
-    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
 }
 
 .weekly-dish-text {
@@ -56,7 +58,7 @@
 
 .daily-special-page {
     grid-area: "daily-menu";
-    background: linear-gradient(90deg, gold, #17322e);
+    background: linear-gradient(90deg, goldenrod, #fb5c00);
     flex-direction: row-reverse;
 }
 
@@ -72,7 +74,30 @@
     box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3);
 }
 
+.daily-menu-images-container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 10px;
+    width: 1035px;
+}
+
+.daily-menu-image {
+    width: 200px;
+    height: auto;
+    border: 2px solid black;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.6s ease;
+}
+
+.daily-menu-image:hover {
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+}
+
 .weekly-menu-text, .daily-menu-text {
     color: black;
     font-size: 30px;
+    margin-top: 12px;
 }
