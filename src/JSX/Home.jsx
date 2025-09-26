@@ -30,7 +30,7 @@ function Home() {
 
           <div className="menu section">
             <img className="preview-menu" src="./designed-weekly-special-menu.png" />
-            <p className="menu-text">Lorem ip Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quidem sit optio repellendus, eos architecto consequuntur iusto nihil aspernatur vero sunt quos commodi sequi ipsum, non atque, mollitia fuga praesentium? sum dolor sit amet consectetur adipisicing elit. Quia magni accusamus eaque mollitia in corrupti sequi nostrum eligendi tempora iure asperiores, quidem debitis qui amet nisi rem provident, dolores quas.</p>
+            <h1 className="menu-text">Lorem ip Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quidem sit optio repellendus, eos architecto consequuntur iusto nihil aspernatur vero sunt quos commodi sequi ipsum, non atque, mollitia fuga praesentium? sum dolor sit amet consectetur adipisicing elit. Quia magni accusamus eaque mollitia in corrupti sequi nostrum eligendi tempora iure asperiores, quidem debitis qui amet nisi rem provident, dolores quas.</h1>
             <button className="view-menu"><Link className="view-menu-link" to="/menu">View Menu</Link></button>
           </div>
 
@@ -42,6 +42,7 @@ function Home() {
           <div className="location section">
             <MapContainer className="map-location" zoom={20} center={[16.71388, 98.58937]}>
               <TileLayer
+                className="location-tile-layer"
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
               />
@@ -49,7 +50,10 @@ function Home() {
                 <Popup>Hta Naung Yeik</Popup>
               </Marker>
             </MapContainer>
-            <button className="more-location"><Link className="more-location-link" to="/location">View More</Link></button>
+            <div className="location-content">
+              <button className="more-location"><Link className="more-location-link" to="/location">View More</Link></button>
+              <h1 className="location-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ut id hic, explicabo ratione libero nesciunt dolores illo corporis doloremque optio natus molestiae veniam? Voluptas error quod ducimus possimus accusantium.</h1>
+            </div>
           </div>
         </div>
     </main>

@@ -181,7 +181,7 @@
     background: linear-gradient(90deg, #FFEE8E, #FFD700);
     cursor: pointer;
     font-family: "Noto Serif Display";
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 @media (max-width: 700px) {
@@ -198,8 +198,8 @@
 
 .map-location {
     height: 100%;
-    width: 60%;
-    margin-right: auto;
+    width: 300%;
+    float: left;
 }
 
 .more-location {
@@ -211,8 +211,12 @@
     background: linear-gradient(90deg, #FFEE8E, #FFD700);
     cursor: pointer;
     font-family: "Noto Serif Display";
-    margin-left: 10px;
     margin-top: 10px;
+    margin-left: 20px;
+}
+
+.location-text {
+    margin-left: 20px;
 }
 
 .more-location-link, .order-now-link, .view-menu-link, .home-btn-link, .menu-btn-link, .location-btn-link, .contact-btn-link, .aboutus-btn-link {

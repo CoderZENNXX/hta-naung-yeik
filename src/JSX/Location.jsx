@@ -1,7 +1,8 @@
+import "../CSS/Location.css"
+
 function Location() {
     return (
         <div className="location">
-            
         </div>
     )
 }
