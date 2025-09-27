@@ -1,0 +1,43 @@
+.about-us-page {
+    background-color: #17322e;
+    min-height: 150vh;
+}
+
+.about-us-title {
+    font-weight: 450;
+    margin-bottom: 50px;
+    margin-left: 5px;
+    font-size: 45px;
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(./about-us-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.origin-missions-text, .food-text {
+    backdrop-filter: blur(5px);
+}
+
+.about-us-image-container {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+    row-gap: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.about-us-1-image, .about-us-2-image, .about-us-3-image, .about-us-4-image, .about-us-5-image, .about-us-6-image, .about-us-7-image, .about-us-8-image, .about-us-9-image, .about-us-10-image {
+    width: 200px;
+    height: auto;
+}
