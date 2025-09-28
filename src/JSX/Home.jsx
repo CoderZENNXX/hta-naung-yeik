@@ -1,8 +1,7 @@
 import "../CSS/App.css"
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
-import { Link } from "react-router-dom"
 import "leaflet/dist/leaflet.css"
-
+import { Link } from "react-router-dom"
 function Home() {
     const today = new Date().getDay()
 

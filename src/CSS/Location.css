@@ -1,0 +1,50 @@
+.location-page {
+    background-color: #17322e;
+    min-height: 150vh;
+}
+
+.location-title {
+    text-align: center;
+    font-weight: 450;
+    margin-bottom: 50px;
+    font-size: 45px;
+}
+
+.location-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.location-map {
+    width: 100vw;
+    height: 80vh;
+    z-index: 0;
+}
+
+.address {
+    font-weight: 400;
+}
+
+.google-map-btn {
+    height: 80px;
+    width: 240px;
+    font-size: 22px;
+    border-radius: 40px;
+    border: none;
+    background: linear-gradient(90deg, #FFEE8E, #FFD700);
+    cursor: pointer;
+    font-family: "Noto Serif Display";
+}
+
+.google-map-btn:hover {
+    color: white;
+}
+
+.google-map-btn:active {
+    color: black;
+}
+
+.google-map-link {
+    all: unset;
+}
