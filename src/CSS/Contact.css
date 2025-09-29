@@ -1,6 +1,6 @@
 .contact-page {
     background-color: #17322e;
-    min-height: 150vh;
+    min-height: 120vh;
 }
 
 .contact-title {
@@ -39,6 +39,10 @@
     }
 }
 
+.facebook-contact {
+    margin-left: 10px;
+}
+
 .hta-naung-yeik-facebook-image {
     height: 80%;
     width: auto;
@@ -62,6 +66,10 @@
 
 .facebook-icon:active path {
     fill: blue;
+}
+
+.phone-contact {
+    margin-left: 10px;
 }
 
 .hta-naung-yeik-ph-no-image {

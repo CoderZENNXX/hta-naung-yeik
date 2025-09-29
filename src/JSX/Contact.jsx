@@ -16,7 +16,6 @@ function Contact() {
                 <div className="phone-contact">
                     <h1>Phone: 0612250509</h1>
                 </div>
-
             </div>
         </div>
     )
