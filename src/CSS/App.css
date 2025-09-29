@@ -200,6 +200,7 @@
     height: 100%;
     width: 300%;
     float: left;
+    z-index: 0;
 }
 
 .more-location {
@@ -231,6 +232,59 @@
     color: black;
 }
 
-.footer {
+.footer-page {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-hta-naung-yeik {
+    border-bottom: 1px solid white;
+}
+
+.footer-hta-naung-yeik, .footer-dev {
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo-text, .footer-dev-logo-text {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-logo {
+    margin-left: 10px;
+}
+
+.footer-logo, .footer-dev-logo {
+    width: 70px;
+    height: auto;
+}
+
+.footer-text, .footer-dev-text {
+    font-weight: 400;
+}
+
+.footer-links, .footer-dev-links {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.footer-about-us-link, .footer-contact-link {
+    color: white;
+}
+
+.footer-dev-github {
+    height: 70px;
+    width: auto;
+    opacity: 1;
 }
