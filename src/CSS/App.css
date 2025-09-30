@@ -279,12 +279,6 @@
     margin-right: 10px;
 }
 
-.footer-about-us-link, .footer-contact-link {
+.footer-about-us-link, .footer-contact-link, .footer-dev-github {
     color: white;
-}
-
-.footer-dev-github {
-    height: 70px;
-    width: auto;
-    opacity: 1;
 }
